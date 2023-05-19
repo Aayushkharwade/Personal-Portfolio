@@ -21,4 +21,4 @@ def serve_static(path):
     return render_template(os.path.join(root_dir, 'static'), path)
 
 if __name__ == ('__main__'):
-    app.run()
+    app.run(host='0.0.0.0')
